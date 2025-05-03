@@ -1,0 +1,104 @@
+.todo-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+
+  mat-form-field {
+    flex: 1;
+    min-width: 200px;
+  }
+}
+
+.selected-chip {
+  background-color: #007bff;
+  color: white;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-details {
+  margin-top: 8px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.overdue {
+  color: #f44336;
+}
+
+.completed-text {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.due-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.task-card {
+  position: relative;
+  border-left: 4px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  margin-bottom: 16px;
+}
+
+/* Priority-based vertical line colors */
+.task-card.priority-high {
+  border-left-color: #f44336;
+  /* Red for high priority */
+}
+
+.task-card.priority-medium {
+  border-left-color: #ff9800;
+  /* Orange for medium priority */
+}
+
+.task-card.priority-low {
+  border-left-color: #4caf50;
+  /* Green for low priority */
+}
+
+/* Completed task card */
+.task-card.completed {
+  border-left-color: #4caf50;
+  /* Green for completed tasks */
+  opacity: 0.8;
+  background-color: #f9f9f9;
+}
+
+.task-card {
+  /* existing styles */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}

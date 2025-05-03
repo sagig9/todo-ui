@@ -1,0 +1,24 @@
+.full-width {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+mat-checkbox {
+    display: block;
+    margin-bottom: 16px;
+}
+
+button[type="submit"] {
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-dialog-content {
+    min-width: 300px;
+}
+
+.mat-mdc-dialog-content {
+    overflow: unset;
+}

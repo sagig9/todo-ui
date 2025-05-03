@@ -1,0 +1,80 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Global utility classes */
+.full-width {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Reset some material card styles */
+mat-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+
+.task-card {
+    margin-bottom: 16px;
+    border-left: 4px solid #3f51b5;
+
+    &.completed {
+        border-left-color: #4caf50;
+        opacity: 0.7;
+    }
+}
+
+.task-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    h3 {
+        margin: 0;
+        flex: 1;
+    }
+
+    .completed-text {
+        text-decoration: line-through;
+        color: #757575;
+    }
+}
+
+.task-details {
+    margin-top: 12px;
+    margin-left: 55px;
+    color: #757575;
+
+    .due-date {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+    }
+}
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.no-tasks {
+    text-align: center;
+    color: #757575;
+    padding: 30px;
+}
+
+.clickable-button {
+    cursor: pointer;
+}
